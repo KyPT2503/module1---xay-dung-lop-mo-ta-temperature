@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<canvas id=""></canvas>
+<script>
+    class Temperature
+    {
+        constructor(temp)
+        {
+            this.temp=temp;
+        }
+        getTemp()
+        {
+            return this.temp;
+        }
+        convertF()
+        {
+            return 1.8*this.temp+32+' do F';
+        }
+        convertK()
+        {
+            return this.temp+273.15 + ' do Kelvin';
+        }
+    }
+    let now=new Temperature(25);
+    console.log(now.getTemp());
+    console.log(now.convertF());
+    console.log(now.convertK());
+</script>
+</body>
+</html>
